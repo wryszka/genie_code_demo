@@ -8,7 +8,7 @@ A hands-on demo showing how Databricks **Genie Code** can build an end-to-end in
 |-----|----------|---------------------|
 | 1 | `01_generate_data` | Generate 50K synthetic motor insurance policies and 15K claims |
 | 2 | `02_build_pipeline` | Build a medallion pipeline: Bronze → Silver → Gold |
-| 3 | `03_analytics` | SQL analytics, loss ratios, trend charts, regional breakdowns |
+| 3 | `03_analytics` | Notebook charts + build a full AI/BI Dashboard with 6 widgets |
 | 4 | `04_fraud_model` | EDA, feature engineering, train a fraud detection model with MLflow |
 
 ## How to demo
@@ -22,7 +22,11 @@ Each notebook contains **Genie Code prompts** — plain English instructions you
 
 The notebooks also contain pre-written "expected output" code, so they work end-to-end without Genie Code. Delete any cell's code to regenerate it live.
 
-Some prompts are labelled **SQL Editor** — open the SQL Editor from the left sidebar and paste the query there.
+Prompts are labelled with where to run them:
+
+- **Notebook** — press Cmd+I in a code cell
+- **SQL Editor** — open SQL Editor from the left sidebar
+- **AI/BI Dashboard** — go to Dashboards in the left sidebar, create a new dashboard, and use Genie Code on the canvas
 
 ## Tables created
 
