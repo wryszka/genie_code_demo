@@ -41,12 +41,10 @@
 # MAGIC ---
 # MAGIC ## 2. Build Medallion Pipeline (Spark Declarative Pipelines)
 # MAGIC
-# MAGIC For this step:
-# MAGIC 1. Create a **new notebook** (this code runs inside a Lakeflow pipeline, not interactively)
-# MAGIC 2. Paste the prompt into Genie Code in that new notebook
-# MAGIC 3. Then go to **Workflows** → **Create pipeline** → point it to that notebook and run it
+# MAGIC Create a **new notebook** and paste this prompt into Genie Code.
+# MAGIC Then go to **Workflows** → **Create pipeline** → point it to that notebook and run it.
 # MAGIC
-# MAGIC > **Genie Code prompt (in the new notebook):**
+# MAGIC > **Genie Code prompt:**
 # MAGIC > ```
 # MAGIC > Create a Spark Declarative Pipeline that reads dbc.genie_code_demo.1_raw_policies
 # MAGIC > and dbc.genie_code_demo.1_raw_claims and builds a medallion architecture:
