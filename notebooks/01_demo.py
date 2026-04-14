@@ -41,8 +41,8 @@
 # MAGIC ---
 # MAGIC ## 2. Build Medallion Pipeline (Spark Declarative Pipelines)
 # MAGIC
-# MAGIC Create a **new notebook** and paste this prompt into Genie Code.
-# MAGIC Then go to **Workflows** → **Create pipeline** → point it to that notebook and run it.
+# MAGIC Copy the prompt below, then go to **Jobs and Pipelines** → **Create ETL pipeline**.
+# MAGIC When the new pipeline opens, paste the prompt into Genie Code.
 # MAGIC
 # MAGIC > **Genie Code prompt:**
 # MAGIC > ```
