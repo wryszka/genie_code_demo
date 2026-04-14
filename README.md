@@ -2,18 +2,18 @@
 
 A quick demo showing how Databricks **Genie Code** can build an end-to-end insurance analytics pipeline using only natural language prompts. Works on **Databricks Free Edition**.
 
-## What this demo covers
+## Demo flow
 
-| Step | Notebook | What Genie Code Does |
-|------|----------|---------------------|
-| 1 | `01_generate_data` | Generate 50K policies + 15K claims |
-| 2 | `02_build_pipeline` | Build a medallion pipeline: Bronze → Silver → Gold |
-| 3 | `03_dashboard` | Build a full AI/BI Dashboard from a single prompt |
-| 4 | `04_fraud_model` | EDA, train fraud detection model, register in Unity Catalog |
+| Step | Where | What Genie Code Does |
+|------|-------|---------------------|
+| 1. Generate Data | `01_demo` notebook | Generate 50K policies + 15K claims |
+| 2. Medallion Pipeline | New notebook → Lakeflow pipeline | Build SDP bronze → silver → gold |
+| 3. Dashboard | AI/BI Dashboard canvas | Build a full dashboard from one prompt |
+| 4. ML Model | `01_demo` notebook | EDA, train fraud model, register in Unity Catalog |
 
 ## How to demo
 
-Each notebook has **Genie Code prompts** — plain English you copy-paste. Open Genie Code by clicking on the lamp icon in the top right corner, paste the prompt, and let Genie write the code. Feel free to modify the prompts or use your own.
+Open Genie Code by clicking on the lamp icon in the top right corner. Paste the prompts. Feel free to modify these or use your own if you want to experiment.
 
 ## Setup
 

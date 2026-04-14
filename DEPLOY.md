@@ -21,14 +21,11 @@ Or use sed:
 sed -i 's/dbc/YOUR_CATALOG/g' notebooks/00_config.py
 ```
 
-Only `00_config.py` contains the catalog name — all other notebooks inherit it via `%run`.
+Also update the catalog name in the prompts inside `01_demo` (replace `dbc.genie_code_demo` with your catalog).
 
-## Step 3: Run in order
+## Step 3: Run
 
-1. `01_generate_data` — creates raw tables (~2 min)
-2. `02_build_pipeline` — builds silver + gold (~1 min)
-3. `03_dashboard` — follow instructions to build dashboard on the canvas
-4. `04_fraud_model` — EDA + model training + Unity Catalog registration (~2 min)
+1. Open `01_demo` and follow the prompts in order
 
 ## Cleanup
 
