@@ -18,6 +18,7 @@ SCHEMA = "genie_code_demo"
 
 # COMMAND ----------
 
+# spark.sql(f"CREATE CATALOG IF NOT EXISTS {CATALOG}")  # uncomment if you have permission
 spark.sql(f"CREATE SCHEMA IF NOT EXISTS {CATALOG}.{SCHEMA}")
 spark.sql(f"USE CATALOG {CATALOG}")
 spark.sql(f"USE SCHEMA {SCHEMA}")
