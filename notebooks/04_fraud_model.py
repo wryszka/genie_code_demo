@@ -6,7 +6,7 @@
 # MAGIC > **About this demo:** This is not a Databricks product — it is a working demonstration of Genie Code
 # MAGIC > on Databricks. All data is synthetic. Provided as-is for demonstration and learning purposes.
 # MAGIC
-# MAGIC **How to use:** Press **Cmd+I** in each empty cell, paste the prompt, press Enter.
+# MAGIC **How to use:** Open Genie Code by clicking on the lamp icon in the top right corner. Paste the prompts. Feel free to modify these or use your own if you want to experiment.
 
 # COMMAND ----------
 
@@ -17,7 +17,7 @@
 # MAGIC %md
 # MAGIC ## EDA
 # MAGIC
-# MAGIC > **Genie Code prompt — press Cmd+I in the cell below:**
+# MAGIC > **Genie Code prompt:**
 # MAGIC > ```
 # MAGIC > Read the 3_gold_claims table into pandas. Show the fraud vs non-fraud class balance,
 # MAGIC > then create a 2x2 grid of plots: claim amount distribution by fraud flag,
@@ -34,7 +34,7 @@
 # MAGIC %md
 # MAGIC ## Train Model & Register in Unity Catalog
 # MAGIC
-# MAGIC > **Genie Code prompt — press Cmd+I in the cell below:**
+# MAGIC > **Genie Code prompt:**
 # MAGIC > ```
 # MAGIC > Using the 3_gold_claims table, train a GradientBoostingClassifier to predict fraud_flag.
 # MAGIC > Use numeric features (claim_amount, reserve_amount, days_to_report, days_on_policy,
@@ -53,7 +53,7 @@
 # MAGIC %md
 # MAGIC ## Feature Importance
 # MAGIC
-# MAGIC > **Genie Code prompt — press Cmd+I in the cell below:**
+# MAGIC > **Genie Code prompt:**
 # MAGIC > ```
 # MAGIC > Show the top 10 most important features from the trained model as a horizontal bar chart.
 # MAGIC > ```

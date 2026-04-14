@@ -12,9 +12,11 @@
 # MAGIC
 # MAGIC 1. Click **Dashboards** in the left sidebar
 # MAGIC 2. Click **Create dashboard**
-# MAGIC 3. On the empty canvas, press **Cmd+I** (Mac) / **Ctrl+I** (Windows) to open Genie Code
-# MAGIC 4. Paste the prompt below and press Enter
+# MAGIC 3. On the empty canvas, open Genie Code by clicking on the lamp icon in the top right corner
+# MAGIC 4. Paste the prompt below
 # MAGIC 5. Genie Code will build the entire dashboard automatically
+# MAGIC
+# MAGIC Feel free to modify the prompt or use your own if you want to experiment.
 # MAGIC
 # MAGIC ---
 # MAGIC

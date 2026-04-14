@@ -13,12 +13,7 @@ A quick demo showing how Databricks **Genie Code** can build an end-to-end insur
 
 ## How to demo
 
-Each notebook has **Genie Code prompts** — plain English you copy-paste:
-
-- **Notebooks:** click into a code cell, press **Cmd+I** (Mac) / **Ctrl+I** (Windows), paste, Enter
-- **Dashboard:** go to Dashboards in the left sidebar, create a new dashboard, press **Cmd+I** on the canvas, paste the prompt
-
-The notebooks contain pre-written code so they also work end-to-end without Genie Code. Delete any cell's code to regenerate it live.
+Each notebook has **Genie Code prompts** — plain English you copy-paste. Open Genie Code by clicking on the lamp icon in the top right corner, paste the prompt, and let Genie write the code. Feel free to modify the prompts or use your own.
 
 ## Setup
 

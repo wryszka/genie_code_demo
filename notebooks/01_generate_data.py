@@ -7,7 +7,7 @@
 # MAGIC > on Databricks. All data is synthetic. Insurance terms are illustrative. Provided as-is for demonstration
 # MAGIC > and learning purposes — not for production use.
 # MAGIC
-# MAGIC **How to use:** Click into the empty code cell below each prompt, press **Cmd+I** (Mac) / **Ctrl+I** (Windows), paste the prompt, press Enter. Genie Code writes the code for you.
+# MAGIC **How to use:** Open Genie Code by clicking on the lamp icon in the top right corner. Paste the prompts. Feel free to modify these or use your own if you want to experiment.
 
 # COMMAND ----------
 
@@ -18,7 +18,7 @@
 # MAGIC %md
 # MAGIC ## Generate Policies
 # MAGIC
-# MAGIC > **Genie Code prompt — press Cmd+I in the cell below:**
+# MAGIC > **Genie Code prompt:**
 # MAGIC > ```
 # MAGIC > Generate 50,000 synthetic UK motor insurance policies. Use dbc catalog and create a Delta
 # MAGIC > table "1_raw_policies" for that data. Columns: policy_id, customer_name, customer_age,
@@ -36,7 +36,7 @@
 # MAGIC %md
 # MAGIC ## Generate Claims
 # MAGIC
-# MAGIC > **Genie Code prompt — press Cmd+I in the cell below:**
+# MAGIC > **Genie Code prompt:**
 # MAGIC > ```
 # MAGIC > Generate ~15,000 synthetic insurance claims against the 1_raw_policies table in dbc catalog
 # MAGIC > and save as Delta table "1_raw_claims". Columns: claim_id, policy_id, claim_date, notification_date,
