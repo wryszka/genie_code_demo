@@ -10,20 +10,15 @@ In your workspace: **Workspace** → right-click your user folder → **Import**
 
 ## Step 2: Set your catalog
 
-Open `notebooks/00_config` and change the `CATALOG` variable:
+Default catalog is `dbc` (works on Databricks Free Edition). If deploying on a different workspace, open `notebooks/00_config` and change the `CATALOG` variable:
 
 ```python
-CATALOG = "lr_serverless_aws_us_catalog"   # <-- change this
-```
-
-On **Databricks Free Edition**, use `main`:
-```python
-CATALOG = "main"
+CATALOG = "dbc"   # <-- change this to your catalog
 ```
 
 Or use sed:
 ```bash
-sed -i 's/lr_serverless_aws_us_catalog/main/g' notebooks/00_config.py
+sed -i 's/dbc/YOUR_CATALOG/g' notebooks/00_config.py
 ```
 
 Only `00_config.py` contains the catalog name — all other notebooks inherit it via `%run`.
