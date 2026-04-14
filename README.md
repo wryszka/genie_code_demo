@@ -1,49 +1,29 @@
 # Genie Code Demo — Motor Insurance Claims
 
-A hands-on demo showing how Databricks **Genie Code** can build an end-to-end insurance analytics pipeline using only natural language prompts.
+A quick demo showing how Databricks **Genie Code** can build an end-to-end insurance analytics pipeline using only natural language prompts. Works on **Databricks Free Edition**.
 
 ## What this demo covers
 
-| Act | Notebook | What Genie Code Does |
-|-----|----------|---------------------|
-| 1 | `01_generate_data` | Generate 50K synthetic motor insurance policies and 15K claims |
+| Step | Notebook | What Genie Code Does |
+|------|----------|---------------------|
+| 1 | `01_generate_data` | Generate 50K policies + 15K claims |
 | 2 | `02_build_pipeline` | Build a medallion pipeline: Bronze → Silver → Gold |
-| 3 | `03_analytics` | Notebook charts + build a full AI/BI Dashboard with 6 widgets |
-| 4 | `04_fraud_model` | EDA, feature engineering, train a fraud detection model with MLflow |
+| 3 | `03_dashboard` | Build a full AI/BI Dashboard from a single prompt |
+| 4 | `04_fraud_model` | EDA, train fraud detection model, register in Unity Catalog |
 
 ## How to demo
 
-Each notebook contains **Genie Code prompts** — plain English instructions you copy into Genie Code:
+Each notebook has **Genie Code prompts** — plain English you copy-paste:
 
-1. Click into a code cell
-2. Press **Cmd+I** (Mac) or **Ctrl+I** (Windows) to open Genie Code
-3. Paste the prompt and press Enter
-4. Review the generated code, then Run
+- **Notebooks:** click into a code cell, press **Cmd+I** (Mac) / **Ctrl+I** (Windows), paste, Enter
+- **Dashboard:** go to Dashboards in the left sidebar, create a new dashboard, press **Cmd+I** on the canvas, paste the prompt
 
-The notebooks also contain pre-written "expected output" code, so they work end-to-end without Genie Code. Delete any cell's code to regenerate it live.
+The notebooks contain pre-written code so they also work end-to-end without Genie Code. Delete any cell's code to regenerate it live.
 
-Prompts are labelled with where to run them:
+## Setup
 
-- **Notebook** — press Cmd+I in a code cell
-- **SQL Editor** — open SQL Editor from the left sidebar
-- **AI/BI Dashboard** — go to Dashboards in the left sidebar, create a new dashboard, and use Genie Code on the canvas
-
-## Tables created
-
-| Layer | Table | Description |
-|-------|-------|-------------|
-| Bronze | `1_raw_policies` | Synthetic motor insurance policies |
-| Bronze | `1_raw_claims` | Synthetic claims events |
-| Silver | `2_silver_policies` | Cleaned, typed, with derived columns |
-| Silver | `2_silver_claims` | Claims enriched with policy data |
-| Gold | `3_gold_claims_summary` | Aggregated by region and cover type |
-| Gold | `3_gold_claims_detail` | Row-level fact table for dashboards and ML |
-| Output | `4_fraud_predictions` | Top fraud predictions from ML model |
-
-## Quick start
-
-See [DEPLOY.md](DEPLOY.md) for setup instructions, including how to change the catalog for your workspace.
+See [DEPLOY.md](DEPLOY.md). Only one variable to change: the catalog name in `00_config`.
 
 ## About this demo
 
-This is not a Databricks product — it is a working demonstration of what can be built on the Databricks platform using Genie Code. The data is entirely synthetic. Insurance terms (loss ratios, NCD, FNOL) are illustrative and should not be relied upon for actuarial or underwriting decisions. The source code is available on GitHub and can be deployed to any Databricks workspace including Databricks Free Edition. Provided as-is for demonstration and learning purposes — not for production use.
+This is not a Databricks product — it is a working demonstration of what can be built on the Databricks platform using Genie Code. The data is entirely synthetic. Insurance terms are illustrative and should not be relied upon for actuarial or underwriting decisions. Provided as-is for demonstration and learning purposes — not for production use.
