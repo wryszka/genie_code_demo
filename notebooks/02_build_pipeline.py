@@ -19,8 +19,9 @@
 # MAGIC
 # MAGIC > **Genie Code prompt:**
 # MAGIC > ```
-# MAGIC > Read 1_raw_policies, clean it and save as "2_silver_policies". Cast dates to date type,
-# MAGIC > add age_band (18-25, 26-35, 36-50, 51-65, 66+), add vehicle_age = 2024 - vehicle_year,
+# MAGIC > Read dbc.genie_code_demo.1_raw_policies, clean it and save as
+# MAGIC > dbc.genie_code_demo.2_silver_policies. Cast dates to date type, add age_band
+# MAGIC > (18-25, 26-35, 36-50, 51-65, 66+), add vehicle_age = 2024 - vehicle_year,
 # MAGIC > deduplicate by policy_id.
 # MAGIC > ```
 
@@ -35,10 +36,10 @@
 # MAGIC
 # MAGIC > **Genie Code prompt:**
 # MAGIC > ```
-# MAGIC > Join 1_raw_claims with 2_silver_policies on policy_id. Save as "2_silver_claims".
-# MAGIC > Include policy fields: customer_age, age_band, region, vehicle_make, vehicle_age,
-# MAGIC > cover_type, annual_premium, ncd_years. Add days_to_report, days_on_policy,
-# MAGIC > and claim_to_premium_ratio columns.
+# MAGIC > Join dbc.genie_code_demo.1_raw_claims with dbc.genie_code_demo.2_silver_policies
+# MAGIC > on policy_id. Save as dbc.genie_code_demo.2_silver_claims. Include policy fields:
+# MAGIC > customer_age, age_band, region, vehicle_make, vehicle_age, cover_type, annual_premium,
+# MAGIC > ncd_years. Add days_to_report, days_on_policy, and claim_to_premium_ratio columns.
 # MAGIC > ```
 
 # COMMAND ----------
@@ -52,7 +53,8 @@
 # MAGIC
 # MAGIC > **Genie Code prompt:**
 # MAGIC > ```
-# MAGIC > Create a gold table "3_gold_claims" from 2_silver_claims with all columns.
+# MAGIC > Create a gold table dbc.genie_code_demo.3_gold_claims from
+# MAGIC > dbc.genie_code_demo.2_silver_claims with all columns.
 # MAGIC > This is the fact table for dashboards and ML.
 # MAGIC > ```
 

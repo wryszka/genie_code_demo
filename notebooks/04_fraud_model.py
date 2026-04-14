@@ -19,7 +19,7 @@
 # MAGIC
 # MAGIC > **Genie Code prompt:**
 # MAGIC > ```
-# MAGIC > Read the 3_gold_claims table into pandas. Show the fraud vs non-fraud class balance,
+# MAGIC > Read dbc.genie_code_demo.3_gold_claims into pandas. Show the fraud vs non-fraud class balance,
 # MAGIC > then create a 2x2 grid of plots: claim amount distribution by fraud flag,
 # MAGIC > boxplot of days_to_report by fraud, boxplot of claim_to_premium_ratio by fraud,
 # MAGIC > and fraud rate by claim_type as a bar chart.
@@ -36,7 +36,7 @@
 # MAGIC
 # MAGIC > **Genie Code prompt:**
 # MAGIC > ```
-# MAGIC > Using the 3_gold_claims table, train a GradientBoostingClassifier to predict fraud_flag.
+# MAGIC > Using dbc.genie_code_demo.3_gold_claims, train a GradientBoostingClassifier to predict fraud_flag.
 # MAGIC > Use numeric features (claim_amount, reserve_amount, days_to_report, days_on_policy,
 # MAGIC > claim_to_premium_ratio, customer_age, vehicle_age, ncd_years, annual_premium) and
 # MAGIC > one-hot encode categoricals (claim_type, cover_type, region, fault). Split 80/20,

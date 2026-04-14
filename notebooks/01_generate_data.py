@@ -20,8 +20,8 @@
 # MAGIC
 # MAGIC > **Genie Code prompt:**
 # MAGIC > ```
-# MAGIC > Generate 50,000 synthetic UK motor insurance policies. Use dbc catalog and create a Delta
-# MAGIC > table "1_raw_policies" for that data. Columns: policy_id, customer_name, customer_age,
+# MAGIC > Generate 50,000 synthetic UK motor insurance policies and save as Delta table
+# MAGIC > dbc.genie_code_demo.1_raw_policies. Columns: policy_id, customer_name, customer_age,
 # MAGIC > region, vehicle_make, vehicle_year, vehicle_value, cover_type, annual_premium, ncd_years,
 # MAGIC > cover_start_date, cover_end_date. Make premiums realistically correlated with age and
 # MAGIC > vehicle value.
@@ -38,8 +38,8 @@
 # MAGIC
 # MAGIC > **Genie Code prompt:**
 # MAGIC > ```
-# MAGIC > Generate ~15,000 synthetic insurance claims against the 1_raw_policies table in dbc catalog
-# MAGIC > and save as Delta table "1_raw_claims". Columns: claim_id, policy_id, claim_date, notification_date,
+# MAGIC > Generate ~15,000 synthetic insurance claims against dbc.genie_code_demo.1_raw_policies
+# MAGIC > and save as Delta table dbc.genie_code_demo.1_raw_claims. Columns: claim_id, policy_id, claim_date, notification_date,
 # MAGIC > claim_type, claim_amount, reserve_amount, paid_amount, claim_status, fault,
 # MAGIC > injury_involved, fraud_flag. Make fraud_flag ~3% and correlated with theft, high amounts,
 # MAGIC > and young drivers.

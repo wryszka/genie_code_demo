@@ -25,7 +25,7 @@
 # MAGIC Copy this into the dashboard canvas:
 # MAGIC
 # MAGIC > ```
-# MAGIC > Build a motor insurance claims dashboard using the 3_gold_claims table.
+# MAGIC > Build a motor insurance claims dashboard using the dbc.genie_code_demo.3_gold_claims table.
 # MAGIC > Include:
 # MAGIC > 1. KPI counters: total claims, total exposure (sum of claim_amount), overall loss ratio
 # MAGIC >    (sum of paid_amount / sum of annual_premium), and fraud rate percentage
